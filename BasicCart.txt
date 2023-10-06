@@ -1,0 +1,624 @@
+Q7
+Q10
+daQ.1 
+Given an integer , Program to print half pyramid using alphabet
+
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first Number : ");
+		int a = sc.nextInt();
+		System.out.println("Enter second Number : ");
+		int b = sc.nextInt();
+		int c = -1;
+		if(a<=100 && a>=-100 && b<=100 && b>=-100 ) {
+			c=a+b;
+		}
+		System.out.println(c);
+		
+	}
+
+}
+
+Q.2
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter radius : ");
+		float radius = sc.nextFloat();
+		float pi = 3.142f;
+		float area =0;
+		float circumference =0;
+		if(radius >=1 && radius <=1000) {
+			 area = pi*radius*radius;
+			 circumference = 2*pi*radius;
+				DecimalFormat dFormat = new DecimalFormat("#.#####");
+				System.out.println("Area = " + dFormat.format(area));
+				System.out.println("Circumference = " + dFormat.format(circumference) );
+		}else {
+			System.out.println(-1);
+		}		
+	}
+
+}
+
+Q.3
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter side : ");
+		float side = sc.nextFloat();
+		float area =0;
+		DecimalFormat dFormat = new DecimalFormat("#.##");
+	
+		if(side >=1 && side <=1000) {
+			area = 0.433f*side*side;	
+			System.out.println("Area = "+ dFormat.format(area));
+		}else {
+			System.out.println(0);
+		}		
+	
+	}
+
+}
+
+Q.4
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter A : ");
+		float a = sc.nextFloat();
+		System.out.println("Enter B : ");
+		float b = sc.nextFloat();
+	
+		if(a >=-100 && a <=100 && b>=-100 && b<=100) {
+			a=a+b;
+			b=a-b;
+			a=a-b;
+			System.out.println("A = " + a);
+			System.out.println("B = " + b);
+		}else {
+			System.out.println("Error");
+		}		
+	
+	}
+
+}
+Q.5
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter A : ");
+		float a = sc.nextFloat();
+		System.out.println("Enter B : ");
+		float b = sc.nextFloat();
+	
+			
+			System.out.println("prodict =  " + a*b);
+			
+	
+	}
+
+}
+
+Q.6
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number: ");
+		float a = sc.nextFloat();
+		if(a>=-300 && a<=300)
+		{
+			if(a%2 == 0)
+				System.out.println("Even");
+			else {
+				System.out.println("Odd");
+			}
+		}else {
+			System.out.println(-1);
+		}
+		
+		
+			
+	
+	}
+
+}
+
+Q.8
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number : ");
+		float a = sc.nextFloat();
+		
+	
+		if(a >=0 && a <=300 ) {	
+			if (a%5 == 0) {
+				System.out.println("Yes");
+			}else {
+				System.out.println("NO");
+			}
+		
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Q.9
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		float a = sc.nextFloat();
+		System.out.println("Enter Number1 : ");
+		float b = sc.nextFloat();
+	
+		if(a >=-1000 && a <=1000 && b>=-1000 && b<=1000 ) {	
+			if (a==b) {
+				System.out.println("Equal");
+			}else {
+				System.out.println("NOt Equal");
+			}
+		
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Q.11
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		float a = sc.nextFloat();
+		float sum = 0f;
+		if(a >=0 && a <=1000 ) {	
+			for(Float i=0f;i<=a;i++)
+			sum = sum+i;
+			System.out.println("sum = " + sum);
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Q.12
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		int sum = 0;
+		if(a >=-10000 && a <=10000 ) {	
+			while(a>0) {
+				a=a/10;
+				sum++;
+			}
+			System.out.println("NO of digits = " + sum);
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Q.13
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		int sum = 0;
+		if(a >=-10000 && a <=10000 ) {	
+			while(a>0) {
+				int r=a%10;
+				a=a/10;
+				sum = sum +r;
+			}
+			System.out.println("sum = " + sum);
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Q.14
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		int sum = 1;
+		if(a >=0 && a <=12 ) {	
+			while(a>0) {
+				
+				sum = sum *a;
+				a--;
+			}
+			System.out.println("multiplication = " + sum);
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Q.15
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		int n1 = 0;
+		int n2 = 1;		
+		int n3;
+		
+		if(a >=0 && a <=100 ) {	
+			System.out.println(n1);
+			System.out.println(n2);
+			while(a > 2) {
+			n3 = n1+n2;
+			n1=n2;
+			n2=n3;
+			a--;
+			System.out.println(n3);
+			}
+		}else {
+			System.out.println("-1");
+		}		
+	
+	}
+
+}
+
+Find greatest of three numbers?
+
+import java.text.DecimalFormat;
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		System.out.println("Enter Number2 : ");
+		int b = sc.nextInt();
+		System.out.println("Enter Number3 : ");
+		int c = sc.nextInt();
+		
+		
+		if(a>b) {	
+		if (a>c) {
+			System.out.println(a);			
+		}else {
+			System.out.println(c);
+		}
+			}else {
+				if (b>c) {
+					System.out.println(b);
+				}else {
+					System.out.println(c);
+				}
+			}
+				
+	
+	}
+
+}
+
+Reverse a given integer
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		int sum=0;
+		int r;
+		if(a>0 && a<10000) {
+			while (a>0) {
+				r=a%10;
+				a= a/10;
+				sum = (sum*10)+r;
+			}
+			System.out.println("Reverse = " + sum);
+		}
+			
+	
+	}
+
+}
+
+
+Find whether the number is palindrome or not
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		int temp =a;
+		int sum=0;
+		int r ,r2;
+		boolean flag = true;
+		if(a>0 && a<10000) {
+			while (a>0) {
+				r=a%10;
+				a= a/10;
+				sum = (sum*10)+r;
+			}
+			System.out.println("Reverse = " + sum);
+			int anosum;
+			while (sum>0) {
+				r=sum%10;
+				sum = sum/10;	
+				r2 = temp%10;
+				temp = temp/10;
+				if(r == r2)
+					continue;
+				else {
+					flag = false;
+				}
+			}
+			if (flag) {
+				System.out.println("Palindrome");
+			}else {
+				System.out.println("Not a Palindrome");
+			}
+		}
+			
+	}
+
+}
+
+Find whether an year is leap or not?
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		if(a>1800 && a<2050) {
+			if (a%4 ==0) {
+				System.out.println("Leap year");
+			}else {
+				System.out.println("Not leap");
+			}
+		}else {
+			System.out.println(-1);
+		}
+	}
+
+}
+
+Given an integer , Print half pyramid using *
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+Given an integer , Print half pyramid using numbers
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<i;j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+Given an integer , Program to print half pyramid using alphabet
+
+
+
+
+
+
+
+
+
+
+
+
+
+Given an integer , print inverted half pyramid using *
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		if (a>0 && a<100) {
+			
+		
+		for(int i=a;i>0;i--) {
+			for(int j=0;j<i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}else {
+		System.out.println(-1);
+	}}}
+
+
+Check whether a number is prime or not
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number1 : ");
+		int a = sc.nextInt();
+		boolean flag =false;
+		if (a>0 && a<100) {
+			for(int i=2;i<=a/2;i++) {
+				if (a%i == 0) {
+					flag = false;
+					break;
+				}
+				else {
+					flag =true;
+				}
+			}
+			if (flag) {
+				System.out.println("Prime");
+			}else {
+				System.out.println("not prime");
+			}
+		}else {
+			System.out.println(-1);
+		}
+		
+}}
+
+
+Print all the prime number in given upper bound and lower bound
+
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter upperbound : ");
+		int a = sc.nextInt();
+		System.out.println("Enter lowerbound : ");
+		int b = sc.nextInt();
+				
+		boolean flag =false;
+		if (a>0 && a<100) {
+			for(int j=b;j<=a;j++) {
+			for(int i=2;i<=j/2;i++) {
+				if (j%i == 0) {
+					flag = false;
+					break;
+				}
+				else {
+					flag =true;
+				}
+			}
+			if (flag) {
+				System.out.println(j);
+			}
+		}}else {
+			System.out.println(-1);
+		}
+		
+}}
+
+
+
+
+Calculate Average of N marks
+
+import java.util.*;
+public class First {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter size : ");
+		int a = sc.nextInt();
+		float sum =0f;
+		for(int i=0;i<a;i++) {
+			sum = sum +sc.nextInt();
+		}
+		System.out.println(sum/a);
+		
+}}
+
+Simple interest on principal with given rate of interest.
+
